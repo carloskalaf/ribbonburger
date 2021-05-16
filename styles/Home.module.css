@@ -1,12 +1,31 @@
 .bg {
     background-color: #000;
     color: #fff;
-    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    margin-top: 0px;
-    margin-left: 0px;
-    display: block;
-    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.burgers{
+    box-sizing: border-box;
+}
+
+.header{
+    height: 90px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+.Images{
+    
+    align-self:flex-start;
+}
+
+.body {
+    top: 0;
+
 }
