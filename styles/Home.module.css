@@ -1,31 +1,60 @@
-.bg {
-    background-color: #000;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../src/assets/fonts/nexa-rust.sans-black.otf);
 }
 
-.burgers{
-    box-sizing: border-box;
+.Logo {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #e8ba2a;
 }
 
-.header{
-    height: 90px;
-    margin-left: 5%;
-    margin-right: 5%;
+.HeaderRibbon {
+    font-family: 'FonteLogo', sans-serif;
     display: flex;
-    justify-content:space-between;
-   
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: #000;
+    min-width: 240px;
+}
+.UlNav {
+    margin: 0px;
+    padding: 0px ;
+    display: flex;
+    list-style: none;
+    gap: .5rem;
 }
 
-.Images{
+.LinNav {
+    display: block;
+    padding: .5rem;
+}
+
+.Links {
+    color: #fff;
+    text-decoration: none;
+}
+.Links:hover {
+    background: #e8ba2a;
+    color: #000;
+}
+
+.NavRibbon {
     
-    align-self:flex-start;
 }
 
-.body {
-    top: 0;
+.BtnMobile {
+    display: none;
+}
 
+@media (max-width: 600px) {
+    .BtnMobile {
+        display: block;
+    }
+    .UlNav {
+        display: none;
+    }
 }
