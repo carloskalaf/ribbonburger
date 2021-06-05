@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     height: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box;
     justify-content: space-between;
     background: #000;
@@ -34,6 +34,7 @@
 .LinNav {
     display: block;
     padding: 0.5rem;
+    
 }
 
 .Links {
@@ -53,18 +54,48 @@
     transition: .5s;
     
 }
+.MobileNav {
+    display:none;
+}
 
 .BtnMobile {
     display: none;
 }
 
+
 @media (max-width: 600px) {
     .BtnMobile {
         display: block;
+        cursor:pointer;
+        position: absolute;
+        right: 5%;
+        top: 15px;
+        z-index: 999;
     }
     .UlNav {
+        margin: 0px;
+        padding: 0px ;
+        list-style: none;
+        gap: .5rem;
+        flex-direction: column;
+        display: flex;
+        top: 70px;
+        right: 0px;
+    }
+    .MobileNav {
+        display: flex;
+        top: 70px;
+        right: 20px;
+        position: absolute;
+        cursor:pointer;
+        
+        
+        
+    }
+    .HomeNav {
         display: none;
     }
+    
 }
 
 .BodyRibbon {
