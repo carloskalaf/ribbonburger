@@ -14,11 +14,13 @@
     display: flex;
     align-items: center;
     height: 70px;
-    padding: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box;
     justify-content: space-between;
     background: #000;
     min-width: 240px;
+    
 }
 .UlNav {
     margin: 0px;
@@ -26,23 +28,29 @@
     display: flex;
     list-style: none;
     gap: .5rem;
+    
 }
 
 .LinNav {
     display: block;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .Links {
     color: #fff;
     text-decoration: none;
+    text-align: center;
+    width: 120%;
+    display: inline-block;
+    line-height: 70px;
 }
 .Links:hover {
     background: #e8ba2a;
     color: #000;
-}
-
-.NavRibbon {
+    line-height: 70px;
+    text-align: center;
+    width: 120%;
+    transition: .5s;
     
 }
 
@@ -58,3 +66,8 @@
         display: none;
     }
 }
+
+.BodyRibbon {
+    color: #fff;
+}
+

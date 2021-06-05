@@ -3,8 +3,14 @@ import Image from 'next/image'
 import { useState } from 'react'
 import {MdRestaurantMenu} from 'react-icons/md'
 
-function home() {
-    
+const Contato = () => {
+    const [Menu, setMenu] = useState(false);
+
+    function MenuRibbon() {
+        if (setMenu){
+
+        }
+    }
 
     return (
 
@@ -21,13 +27,10 @@ function home() {
     </ul>
 </nav> 
 </header>
-<div>
 <body className={Css.BodyRibbon}>
-    teste
+    contato
 </body>
-</div>
 </>
     )
 }
-
-export default home
+export default Contato;

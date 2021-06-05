@@ -2,9 +2,14 @@ import Css from '../../styles/Home.module.css'
 import Image from 'next/image'
 import { useState } from 'react'
 import {MdRestaurantMenu} from 'react-icons/md'
+const carrinho = () => {
+    const [Menu, setMenu] = useState(false);
 
-function home() {
-    
+    function MenuRibbon() {
+        if (setMenu){
+
+        }
+    }
 
     return (
 
@@ -21,13 +26,11 @@ function home() {
     </ul>
 </nav> 
 </header>
-<div>
 <body className={Css.BodyRibbon}>
-    teste
+    carrinho
 </body>
-</div>
 </>
     )
 }
 
-export default home
+export default carrinho;
