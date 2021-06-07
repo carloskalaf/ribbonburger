@@ -23,9 +23,9 @@ const [Menu, setMenu] = useState(false)
         
 </nav> 
 </header>
-<body className={Css.BodyRibbon}>
+<div className={Css.BodyRibbon}>
     carrinho
-</body>
+</div>
 </>
     )
 }
